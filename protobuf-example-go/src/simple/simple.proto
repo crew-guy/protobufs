@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package example.simple;
+option go_package = "simplepb";
+
+message SimpleMessage{
+    int32 id = 1;
+    repeated string name_list = 2;
+    bool isValid = 3;
+}
