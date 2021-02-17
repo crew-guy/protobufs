@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example.options;
+
+option java_package = "com.example.options";
+option java_multiple_files = true;
+
+message OptionMessageTest{
+  int32 int = 1;
+  string name = 2;
+  bool isValid = 3;
+}
+message OptionMessageAnother{
+  repeated int32 id_list = 1;
+  string address = 2;
+}

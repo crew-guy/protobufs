@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package example.simple;
+
+message SimpleMessage{
+    int32 number = 1;
+    string name = 2;
+    bool isValid = 3;
+    repeated string phone = 4;
+}
